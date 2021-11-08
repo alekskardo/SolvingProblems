@@ -15,3 +15,31 @@ console.log(reverseWords("hello world!"));
 
 const reverseList = (list) => list.reverse();
 console.log(reverseList([1, 2, 3, 4]));
+
+/************************************************************ */
+
+// In this Kata we are passing a number (n) into a function.
+
+// Your code will determine if the number passed is even (or not).
+
+// The function needs to return either a true or false.
+
+// function testEven(n) {
+//   if (n % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(testEven(4))
+
+const testEven = (n) => (n % 2 === 0 ? true : false);
+console.log(testEven(5));
+
+// ************************************************
+
+function digitize(n) {
+  return n.toString().split("").reverse().map(Number);
+}
+
+console.log(digitize(35231));
